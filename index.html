@@ -14,9 +14,9 @@
 
         <nav class="max-w-7xl mx-auto px-6 py-2   ">
             <div class="flex items-center justify-between">
-                <div class="flex  items-center gap-4">
-                    <img src="RissLogo.png" alt="logo" class="h-20">
-                    <h1 class="font-semibold text-xl text-gray-100 ">RISS COLLEGE</h1>
+                <div class="flex  items-center gap-2 max-sm:gap-1">
+                    <img src="RissLogo.png" alt="logo" class="h-20 max-sm:h-16">
+                    <h1 class="font-semibold text-xl text-gray-100 max-sm:text-base">RISS COLLEGE</h1>
                 </div>
                 <div class="flex items-center justify-center gap-6  text-white max-[820px]:hidden">
                     <a href="index.html"
@@ -30,6 +30,23 @@
                         class="font-semibold border-b-2 border-transparent hover:text-yellow-300">About</a>
                 </div>
 
+                <!-- hansdburger -->
+
+                
+      <!-- handburger -->
+      <div onclick="openClose()" class="min-[820px]:hidden text-2xl text-white ">
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-settings2 lucide-settings-2" aria-hidden="true">
+          <path d="M14 17H5"></path>
+          <path d="M19 7h-9"></path>
+          <circle cx="17" cy="17" r="3"></circle>
+          <circle cx="7" cy="7" r="3"></circle>
+        </svg>
+      </div>
+    </div>
+
             </div>
 
         </nav>
@@ -37,7 +54,7 @@
     </header>
 
     <!-- hero section -->
-    <section class="relative h-140 w-full overflow-hidden">
+    <section class="relative h-140 w-full overflow-hidden max-sm:h-100">
         <!-- Slides -->
         <div class="slide absolute inset-0 bg-cover bg-center opacity-100 transition-opacity duration-1000 ease-out"
             style="background-image: url('image8.jpeg');"></div>
