@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Terms & Conditions | College</title>
+</head>
+
+<body>
+
+  <header class="bg-gradient-to-br from-teal-800 to-teal-900 ">
+
+    <nav class="max-w-7xl mx-auto px-6 py-2   ">
+      <div class="flex items-center justify-between">
+        <div class="flex  items-center gap-2 max-sm:gap-1">
+          <img src="photo/RissLogo.png" alt="logo" class="h-20 max-sm:h-16">
+          <h1 class="font-semibold text-xl text-gray-100 max-sm:text-base font-serif">RISS COLLEGE</h1>
+        </div>
+        <div class="flex items-center justify-center gap-6  text-white max-[820px]:hidden">
+          <a href="index.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">Home</a>
+          <a href="gallery.html" class="font-semibold border-b-2 border-transparent  hover:text-yellow-300">Gallery</a>
+          <a href="facility.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">Features</a>
+          <a href="contact.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">Contact</a>
+          <a href="about.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">About</a>
+        </div>
+
+        <!-- hansdburger -->
+
+
+        <!-- handburger -->
+        <div onclick="openClose()" class="min-[820px]:hidden text-2xl text-white ">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-settings2 lucide-settings-2" aria-hidden="true">
+            <path d="M14 17H5"></path>
+            <path d="M19 7h-9"></path>
+            <circle cx="17" cy="17" r="3"></circle>
+            <circle cx="7" cy="7" r="3"></circle>
+          </svg>
+        </div>
+      </div>
+
+      </div>
+    </nav>
+
+    <!-- mobile -->
+    <div id="sidebar"
+      class="bg-teal-700  min-h-screen w-54 absolute top-0 z-50 py-6 px-4 -left-0 -left-64 transition-all duration-500 ease-in-out">
+
+
+      <div onclick="openClose()" class="flex justify-end items-center">
+        <i class="fa-solid fa-close  text-xl text-gray-50"></i>
+      </div>
+
+
+      <div class="flex flex-col  pt-5 gap-5 px-5 text-white">
+        <a href="index.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">
+           <i class="fa-solid fa-house mr-1"></i> Home
+         
+        </a>
+        <a href="gallery.html" class="font-semibold border-b-2 border-transparent  hover:text-yellow-300">
+          <i class="fa-solid fa-image mr-1"></i> Gallery
+        </a>
+        <a href="facility.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">
+          <i class="fa-solid fa-star mr-1"></i> Features
+        </a>
+        <a href="contact.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">
+         <i class="fa-solid fa-phone mr-1"></i> Contact
+        </a>
+        <a href="about.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">
+           <i class="fa-solid fa-user mr-1"></i> About
+        </a>
+
+      </div>
+
+    </div>
+    <!-- overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40" onclick="openClose()">
+    </div>
+
+  </header>
+
+<section class="bg-gray-50">
+    <div class="max-w-[90%] mx-auto py-10">
+
+        <!-- Heading -->
+        <div class="text-center space-y-2">
+            <h1 class="text-4xl max-sm:text-3xl font-bold text-blue-900 flex justify-center items-center gap-3">
+                <i class="fa-solid fa-file-contract text-blue-600"></i>
+                Terms & Conditions
+            </h1>
+            <p class="text-gray-600 font-medium max-sm:text-sm">
+                Please review the following terms governing the use of our institutional services and website.
+            </p>
+        </div>
+
+        <!-- Intro -->
+        <p class="text-center mt-4 text-gray-700 max-sm:text-sm max-w-[80%] mx-auto">
+            By accessing this website, students, staff, and visitors agree to comply with the rules, 
+            policies, and guidelines established by the institution.
+        </p>
+
+        <!-- Content -->
+        <div class="mt-10 bg-white shadow-md rounded-lg p-8 space-y-8">
+
+            <!-- 1 -->
+            <div>
+                <h2 class="text-2xl font-semibold text-blue-800 flex items-center gap-2">
+                    <i class="fa-solid fa-globe text-blue-500"></i>
+                    Use of Website
+                </h2>
+                <p class="text-gray-700 mt-2">
+                    Users must utilize this website for lawful and academic purposes only. Unauthorized access, 
+                    data manipulation, or misuse of content is strictly prohibited.
+                </p>
+            </div>
+
+            <!-- 2 -->
+            <div>
+                <h2 class="text-2xl font-semibold text-blue-800 flex items-center gap-2">
+                    <i class="fa-solid fa-book text-blue-500"></i>
+                    Academic Information
+                </h2>
+                <p class="text-gray-700 mt-2">
+                    All academic content, course materials, and institutional information are provided 
+                    for educational purposes. Accuracy is maintained, but updates may occur periodically.
+                </p>
+            </div>
+
+            <!-- 3 -->
+            <div>
+                <h2 class="text-2xl font-semibold text-blue-800 flex items-center gap-2">
+                    <i class="fa-solid fa-user-check text-blue-500"></i>
+                    Student Responsibilities
+                </h2>
+                <p class="text-gray-700 mt-2">
+                    Students are expected to maintain discipline, provide accurate information, and 
+                    adhere to institutional rules and academic integrity policies.
+                </p>
+            </div>
+
+            <!-- 4 -->
+            <div>
+                <h2 class="text-2xl font-semibold text-blue-800 flex items-center gap-2">
+                    <i class="fa-solid fa-scale-balanced text-blue-500"></i>
+                    Institutional Policies
+                </h2>
+                <p class="text-gray-700 mt-2">
+                    All users must comply with institutional policies regarding conduct, attendance, 
+                    examinations, and use of facilities.
+                </p>
+            </div>
+
+            <!-- 5 -->
+            <div>
+                <h2 class="text-2xl font-semibold text-blue-800 flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation text-blue-500"></i>
+                    Limitation of Liability
+                </h2>
+                <p class="text-gray-700 mt-2">
+                    The institution is not liable for any indirect or incidental damages arising from 
+                    the use of its website or services.
+                </p>
+            </div>
+
+            <!-- 6 -->
+            <div>
+                <h2 class="text-2xl font-semibold text-blue-800 flex items-center gap-2">
+                    <i class="fa-solid fa-rotate text-blue-500"></i>
+                    Updates to Terms
+                </h2>
+                <p class="text-gray-700 mt-2">
+                    The institution reserves the right to modify these terms at any time. 
+                    Continued use of the website implies acceptance of updated terms.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Footer Note -->
+        <p class="text-center mt-8 text-gray-700 max-sm:text-sm max-w-[80%] mx-auto">
+            By continuing to use this platform, you acknowledge and agree to these Terms & Conditions. 
+            For further clarification, please contact the administrative office.
+        </p>
+
+    </div>
+</section>
+
+
+  <footer>
+    <div class="bg-sky-950 ">
+      <div class=" max-w-7xl mx-auto pt-6 pb-8 px-6">
+        <img src="photo/RissLogo.png" alt="" class="h-20 w-20">
+        <div class=" grid grid-cols-4 gap-6 text-white/90 max-lg:grid-cols-2 max-sm:grid-cols-1">
+          <!-- about -->
+          <div class="grid gap-6">
+            <h1 class="text-lg font-semibold">About RISS COLLEGE</h1>
+            <p class="text-sm leading-tight">
+              RISS College, Meitram is one of the few colleges in Manipur which is offering Psychology
+              as one of the subjectx in the Bachelor of Arts course.
+            </p>
+            <!-- social media -->
+            <div class="flex gap-3 text-lg">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-whatsapp"></i>
+              </a><a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              
+            </div>
+          </div>
+          <!-- quick links -->
+          <div class=" flex flex-col gap-4 px-6">
+            <h1 class=" text-xl ">Quick Links</h1>
+            <div class="flex flex-col gap-2">
+              <a href="index.html" class=" hover:underline hover:underline-offset-3 "> <i class="fa-solid fa-house mr-1"></i>Home</a>
+              <a href="about.html" class=" hover:underline hover:underline-offset-3 "> <i class="fa-solid fa-user mr-1"></i>About</a>
+              <a href="gallery.html" class=" hover:underline hover:underline-offset-3 "> <i class="fa-solid fa-image mr-1"></i>Gallery</a>
+             
+              <a href="facility.html" class=" hover:underline hover:underline-offset-3 "> <i class="fa-solid fa-star mr-1"></i>Feature</a>
+            </div>
+          </div>
+          <!-- legal -->
+          <div class="  flex flex-col gap-4 px-6">
+            <h1 class=" text-xl ">Legal</h1>
+            <div class="flex flex-col gap-2">
+              <a href="privacy.html" class=" hover:underline hover:underline-offset-3 "><i class="fa-solid fa-shield-halved mr-1"></i>Privacy Policy</a>
+              <a href="term.html" class=" hover:underline hover:underline-offset-3 ">  <i class="fa-solid fa-file-contract mr-1"></i>Terms & Condition</a>
+             
+            </div>
+          </div>
+          <!-- legal -->
+          <div class="  flex flex-col gap-4 px-6">
+            <h1 class=" text-xl ">Contact</h1>
+            <div class="flex flex-col gap-2">
+              <a href="https://maps.app.goo.gl/ohFVZc86LDTKLN8L9" target="_blank"
+                class="hover:underline hover:underline-offset-3">
+
+                <i class="fas fa-map-marker-alt mr-1"></i>
+                RISS COLLEGE, RISS ROOF Bldge, Meitram, Imphal-795140 Manipur
+              </a>
+              <a href="tel:+919366488233" target="_blank"
+                class=" hover:underline hover:underline-offset-3">
+                <i class="fas fa-phone-alt mr-1"></i>
+                +919366488233
+
+              </a>
+              <a href="tel:+918732000735" target="_blank"
+                class=" hover:underline hover:underline-offset-3">
+                <i class="fas fa-phone-alt mr-1"></i>
+                +918732000735
+
+              </a>
+              <a href="mailto:riss.college735@gmail.com" target="_blank"
+                class=" hover:underline hover:underline-offset-3">
+                <i class="fas fa-envelope mr-1"></i>
+                riss.college735@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- below -->
+    <div class="bg-sky-900 py-4">
+      <h4 class="text-center text-white/90 leading-tight tracking-wider font-semibold text-sm">&copy;2026 Riss
+        College Meitram</h4>
+    </div>
+  </footer>
+<script>
+    
+    function openClose() {
+
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      sidebar.classList.toggle("-left-64");
+      overlay.classList.toggle("hidden");
+      document.body.classList.toggle("overflow-hidden");
+
+    }
+
+
+</script>
+</body>
+</html>

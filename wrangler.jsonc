@@ -1,0 +1,8 @@
+{
+  "name": "riss-college",
+  "compatibility_date": "2026-05-05",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public"
+  }
+}

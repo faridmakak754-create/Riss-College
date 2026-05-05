@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+   <header class="bg-gradient-to-br from-teal-800 to-teal-900 ">
+
+    <nav class="max-w-7xl mx-auto px-6 py-2   ">
+      <div class="flex items-center justify-between">
+        <div class="flex  items-center gap-2 max-sm:gap-1">
+          <img src="photo/RissLogo.png" alt="logo" class="h-20 max-sm:h-16">
+          <h1 class="font-semibold text-xl text-gray-100 max-sm:text-base font-serif">RISS COLLEGE</h1>
+        </div>
+        <div class="flex items-center justify-center gap-6  text-white max-[820px]:hidden">
+          <a href="index.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">Home</a>
+          <a href="gallery.html" class="font-semibold border-b-2 border-transparent  hover:text-yellow-300">Gallery</a>
+          <a href="facility.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">Features</a>
+          <a href="contact.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">Contact</a>
+          <a href="about.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">About</a>
+        </div>
+
+        <!-- hansdburger -->
+
+
+        <!-- handburger -->
+        <div onclick="openClose()" class="min-[820px]:hidden text-2xl text-white ">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-settings2 lucide-settings-2" aria-hidden="true">
+            <path d="M14 17H5"></path>
+            <path d="M19 7h-9"></path>
+            <circle cx="17" cy="17" r="3"></circle>
+            <circle cx="7" cy="7" r="3"></circle>
+          </svg>
+        </div>
+      </div>
+
+      </div>
+    </nav>
+
+    <!-- mobile -->
+    <div id="sidebar"
+      class="bg-teal-700  min-h-screen w-54 absolute top-0 z-50 py-6 px-4 -left-0 -left-64 transition-all duration-500 ease-in-out">
+
+
+      <div onclick="openClose()" class="flex justify-end items-center">
+        <i class="fa-solid fa-close  text-xl text-gray-50"></i>
+      </div>
+
+
+      <div class="flex flex-col  pt-5 gap-5 px-5 text-white">
+        <a href="index.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">
+           <i class="fa-solid fa-house mr-1"></i> Home
+         
+        </a>
+        <a href="gallery.html" class="font-semibold border-b-2 border-transparent  hover:text-yellow-300">
+          <i class="fa-solid fa-image mr-1"></i> Gallery
+        </a>
+        <a href="facility.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">
+          <i class="fa-solid fa-star mr-1"></i> Features
+        </a>
+        <a href="contact.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">
+         <i class="fa-solid fa-phone mr-1"></i> Contact
+        </a>
+        <a href="about.html" class="font-semibold border-b-2 border-transparent hover:text-yellow-300">
+           <i class="fa-solid fa-user mr-1"></i> About
+        </a>
+
+      </div>
+
+    </div>
+    <!-- overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40" onclick="openClose()">
+    </div>
+
+  </header>
+
+    <!--  -->
+    <main class="bg-gray-100 py-12 max-sm:py-6 max-md:py-8">
+        <section class="max-w-7xl mx-auto px-6 space-y-10 ">
+            <!-- hero section -->
+            <div class="flex flex-col items-center ">
+                <h1
+                    class="text-4xl max-sm:text-2xl max-md:text-3xl font-serif  font-bold bg-gradient-to-br from-sky-700 to-teal-600 bg-clip-text text-transparent mb-2">
+                    About Our College</h1>
+                <p class="text-gray-600 font-semibold leading-tight tracking-wider text-center max-sm:text-sm">Nurturing
+                    minds through quality education and meaningful learning experiences.</p>
+            </div>
+
+            <p
+                class="text-gray-800 font-semibold max-w-5xl mx-auto text-center pb-10 max-sm:text-sm max-sm:pb-4 max-md:pb-6">
+                RISS College is dedicated to providing quality higher education with a focus on holistic development.
+                Our institution fosters a strong academic environment, experienced faculty,
+                and opportunities that help students grow intellectually and prepare for future careers
+            </p>
+
+            <!-- Mission and vision -->
+            <div class="grid grid-cols-2 gap-4 pb-12 max-sm:grid-cols-1 max-md:pb-6">
+                <!-- our Mission -->
+                <div
+                    class="bg-white p-5 rounded-lg shadow-sm border border-gray-300 hover:-translate-y-1 transition-all  hover:shadow-lg">
+                    <h4 class="text-sky-700 font-semibold text-2xl leading-snug mb-4 max-sm:mb-2">Our Mission</h4>
+                    <p class="leading-6 text-gray-700 font-semibold max-md:text-sm">
+                        To provide quality education that fosters academic excellence, critical thinking, and personal
+                        growth.
+                        We aim to create a supportive learning environment where students are encouraged to develop
+                        knowledge, skills, and values necessary for higher studies and successful careers.
+
+                    </p>
+                </div>
+                <!-- our Vision -->
+                <div
+                    class="bg-white p-5 rounded-lg shadow-sm border border-gray-300 hover:-translate-y-1 transition-all  hover:shadow-lg ">
+                    <h4 class="text-sky-700 font-semibold text-2xl leading-snug mb-4 max-sm:mb-2">Our Vision</h4>
+                    <p class="leading-6 text-gray-700 font-semibold max-md:text-sm">
+                        To become a leading institution of higher education known for academic excellence, innovation,
+                        and student development.
+                        We envision empowering students to become responsible, confident, and capable individuals who
+                        contribute positively to society.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="max-w-6xl mx-auto pt-6 pb-8 bg-gradient-to-bl from-teal-800 to bg-sky-900 rounded-lg shadow-inner shadow-teal-300">
+                <div class="flex flex-col items-center gap-2 px-5">
+                    <h3 class="text-white text-2xl font-serif font-bold leading-tight mb-4 max-md:mb-2 max-sm:text-xl">
+                        Our Expert Faculty</h3>
+                    <p class="text-center  text-gray-100 font-medium max-md:text-sm">
+                        Learn from experienced and highly qualified faculty members dedicated to academic excellence and
+                        student development.
+                        Our teachers bring strong subject knowledge, research experience, and a passion for teaching to
+                        guide students toward success.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gallery View -->
+            <div class="pt-8 max-md:pt-4">
+                <h1
+                    class="text-3xl font-serif max-sm:text-2xl  font-bold bg-gradient-to-br from-teal-600 to-sky-700 bg-clip-text text-transparent mb-2 text-center">
+                    Gallery Preview</h1>
+                <div id="gallery"
+                    class="grid md:grid-cols-2 lg:grid-cols-4 gap-4  pt-12 max-md:pt-8  mb-6 max-lg:grid-col-2 ">
+                    <!-- render -->
+                </div>
+                <div class="flex items-center justify-center">
+                    <a href="gallery.html"
+                        class="bg-sky-700 px-5 py-2 rounded-sm text-white font-semibold flex items-center gap-1 hover:bg-sky-800  ">
+                        Explore Gallery
+                        <i class="fas fa-arrow-right"></i>
+                </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- cta -->
+    <section class="bg-gradient-to-tr from-sky-700 to-teal-600  py-16 px-6 max-lg:py-12 max-md:py-8">
+
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center gap-4 ">
+            <h3 class="text-2xl font-serif font-bold text-white max-sm:text-xl">Start Your Academic Journey </h3>
+            <p class="text-gray-100 font-semibold  tracking-wider text-center max-sm:text-sm">
+                Admissions are now open for the 2026–27 session. Discover our programmes and take the first step towards
+                a
+                successful future.</p>
+            <div class="flex items-center gap-4 flex-wrap justify-center">
+                <a href="tel: +919366488233" class=" bg-blue-600 px-5 py-2 font-semibold text-white tracking-wider flex items-center gap-3 rounded-sm cursor-pointer
+      hover:bg-blue-800 transition-all
+          "> Contact Us
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="facility.html" class=" bg-teal-600 px-5 py-2 font-semibold text-white tracking-wider flex items-center gap-3 rounded-sm
+       hover:bg-teal-800 transition-all 
+         ">View Courses
+                    <i class="fas fa-book"></i>
+            </a>
+            </div>
+        </div>
+    </section>
+
+
+  <footer>
+    <div class="bg-sky-950 ">
+      <div class=" max-w-7xl mx-auto pt-6 pb-8 px-6">
+        <img src="photo/RissLogo.png" alt="" class="h-20 w-20">
+        <div class=" grid grid-cols-4 gap-6 text-white/90 max-lg:grid-cols-2 max-sm:grid-cols-1">
+          <!-- about -->
+          <div class="grid gap-6">
+            <h1 class="text-lg font-semibold">About RISS COLLEGE</h1>
+            <p class="text-sm leading-tight">
+              RISS College, Meitram is one of the few colleges in Manipur which is offering Psychology
+              as one of the subjectx in the Bachelor of Arts course.
+            </p>
+            <!-- social media -->
+            <div class="flex gap-3 text-lg">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-whatsapp"></i>
+              </a><a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              
+            </div>
+          </div>
+          <!-- quick links -->
+          <div class=" flex flex-col gap-4 px-6">
+            <h1 class=" text-xl ">Quick Links</h1>
+            <div class="flex flex-col gap-2">
+              <a href="index.html" class=" hover:underline hover:underline-offset-3 "> <i class="fa-solid fa-house mr-1"></i>Home</a>
+              <a href="about.html" class=" hover:underline hover:underline-offset-3 "> <i class="fa-solid fa-user mr-1"></i>About</a>
+              <a href="gallery.html" class=" hover:underline hover:underline-offset-3 "> <i class="fa-solid fa-image mr-1"></i>Gallery</a>
+             
+              <a href="facility.html" class=" hover:underline hover:underline-offset-3 "> <i class="fa-solid fa-star mr-1"></i>Feature</a>
+            </div>
+          </div>
+          <!-- legal -->
+          <div class="  flex flex-col gap-4 px-6">
+            <h1 class=" text-xl ">Legal</h1>
+            <div class="flex flex-col gap-2">
+              <a href="privacy.html" class=" hover:underline hover:underline-offset-3 "><i class="fa-solid fa-shield-halved mr-1"></i>Privacy Policy</a>
+              <a href="term.html" class=" hover:underline hover:underline-offset-3 ">  <i class="fa-solid fa-file-contract mr-1"></i>Terms & Condition</a>
+             
+            </div>
+          </div>
+          <!-- legal -->
+          <div class="  flex flex-col gap-4 px-6">
+            <h1 class=" text-xl ">Contact</h1>
+            <div class="flex flex-col gap-2">
+              <a href="https://maps.app.goo.gl/ohFVZc86LDTKLN8L9" target="_blank"
+                class="hover:underline hover:underline-offset-3">
+
+                <i class="fas fa-map-marker-alt mr-1"></i>
+                RISS COLLEGE, RISS ROOF Bldge, Meitram, Imphal-795140 Manipur
+              </a>
+              <a href="tel:+919366488233" target="_blank"
+                class=" hover:underline hover:underline-offset-3">
+                <i class="fas fa-phone-alt mr-1"></i>
+                +919366488233
+
+              </a>
+              <a href="tel:+918732000735" target="_blank"
+                class=" hover:underline hover:underline-offset-3">
+                <i class="fas fa-phone-alt mr-1"></i>
+                +918732000735
+
+              </a>
+              <a href="mailto:riss.college735@gmail.com" target="_blank"
+                class=" hover:underline hover:underline-offset-3">
+                <i class="fas fa-envelope mr-1"></i>
+                riss.college735@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- below -->
+    <div class="bg-sky-900 py-4">
+      <h4 class="text-center text-white/90 leading-tight tracking-wider font-semibold text-sm">&copy;2026 Riss
+        College Meitram</h4>
+    </div>
+  </footer>
+
+    <script>
+
+        const images = [
+            {
+                name: "Teaching Staff",
+                image: "image7.jpeg"
+            },
+             {
+                name:"Meating programmes",
+                image:"image8.jpeg"
+            },
+              {
+                 name:"Discussion Hour",
+                image:"image11.jpeg"
+            },
+             {
+                name:"College Library",
+                image:"image5.jpg"
+            }
+        ]
+
+
+        const gallery = document.getElementById("gallery");
+        for (let i = 0; i < images.length; i++) {
+            gallery.innerHTML += `
+          <div class="relative group overflow-hidden rounded-lg">
+                    <img src="${images[i].image}"
+                    class="w-full h-full object-cover 
+                            transition duration-300 
+                            group-hover:scale-110">
+
+                 <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                  <!-- center text -->
+                     <div class="absolute top-1/2 left-1/2
+                      transform -translate-x-1/2 -translate-y-1/2
+                      opacity-0 group-hover:opacity-100
+                      transition duration-300
+                      ">
+                        <p class="text-white font-bold ">
+                           ${images[i].name}
+                        </p>
+                </div>
+            </div>
+
+          `;
+        }
+
+
+        
+    function openClose() {
+
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      sidebar.classList.toggle("-left-64");
+      overlay.classList.toggle("hidden");
+      document.body.classList.toggle("overflow-hidden");
+
+    }
+
+
+    </script>
+</body>
+
+</html>
